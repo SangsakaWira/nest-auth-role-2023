@@ -5,7 +5,6 @@ export class ResetPasswordUserDto {
     @IsEmail()
     email:string
 
-    tanggalLahir: string
-
+    @IsNotEmpty()
     password:string
 }

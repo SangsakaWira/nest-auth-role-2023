@@ -14,16 +14,4 @@ export class CreateUserDto {
 
     @IsNotEmpty()
     password:string
-
-    @IsNotEmpty()
-    namaLengkap: string
-
-    @IsNotEmpty()
-    tanggalLahir: string
-
-    @IsNotEmpty()
-    tempatLahir: string
-
-    @IsNotEmpty()
-    phoneNumber: string
 }

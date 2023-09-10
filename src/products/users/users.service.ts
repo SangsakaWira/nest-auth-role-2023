@@ -44,7 +44,7 @@ export class UsersService {
   
   async checkDataResetPassword(resetPasswordUser: ResetPasswordUserDto) {
     try {
-      const user = await this.userModel.findOne({ email: resetPasswordUser.email, tanggalLahir: resetPasswordUser.tanggalLahir }).select('-password').select('-history').exec()
+      const user = await this.userModel.findOne({ email: resetPasswordUser.email }).select('-password').select('-history').exec()
       switch (user == null) {
         case true:
           return []

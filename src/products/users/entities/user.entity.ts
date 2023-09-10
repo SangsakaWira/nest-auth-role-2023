@@ -23,37 +23,7 @@ export class User {
   role: Role
 
   @Prop()
-  history: string[]
-
-  @Prop()
   namaLengkap: string;
-
-  @Prop()
-  tanggalLahir: string;
-
-  @Prop()
-  tempatLahir: string;
-
-  @Prop()
-  phoneNumber: string;
-
-  @Prop()
-  gelar: string;
-
-  @Prop()
-  tanggalBergabung: string;
-
-  @Prop()
-  linkKantor: string;
-
-  @Prop({ type: MongooseSchema.Types.ObjectId , ref: 'Schedule' })
-  schedule: Types.ObjectId[] 
-
-  @Prop()
-  rate: Number
-
-  @Prop()
-  expired: string;
 
 }
 
